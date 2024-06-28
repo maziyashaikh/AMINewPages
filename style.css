@@ -1425,6 +1425,9 @@ body.offering {
   .container.offercon {
     margin-top: 20px !important;
 }
+.offeringrect.trustin .offercenter {
+  font-size: 30px !important;
+}
   .offercenter {
     position: relative; /* Reset position */
     top: auto;
@@ -3291,7 +3294,7 @@ ul.tableul li {
   .ps-timeline-sec .container ol.ps-timeline li:last-child {
     margin: 0;
     bottom: 0 !important;
-    height: 120px;
+    /* height: 120px; */
   }
   .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
     bottom: 40px !important;
@@ -3386,7 +3389,7 @@ ul.tableul li {
 .ps-timeline-sec .container ol.ps-timeline li span {
   width: 12px;
   height: 12px;
-  margin-left: -25px;
+  margin-left: -7px;
   background: #933993;
   border: 4px solid #933993;
   border-radius: 50%;
@@ -3396,6 +3399,17 @@ ul.tableul li {
   position: absolute;
   top: -8px;
   left: 56%;
+}
+.moboffer{
+  display: none;
+}
+@media (max-width: 769px){
+  .moboffer{
+    display: block;
+  }
+  section.deskoffer {
+    display: none;
+}
 }
 .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
   content: '';
@@ -3528,13 +3542,15 @@ tab-container {
 }
 .tab-container label {
   cursor: pointer;
-  padding: 19px;
+  padding: 20px;
   background-color: #f2e6f2;
   text-align: center;
   transition: all 250ms;
-  width: 96px;
+  width: 200px;
   border-radius: 10px;
+  margin: 10px;
   font-weight: 600;
+  font-size: 20px;
 }
 .tab-container label:last-of-type {
   border: none; 
@@ -3971,4 +3987,54 @@ section.bgdesktop .offercenter {
 }
 .flipinner p {
   text-shadow: 1px 1px 3px black;
+}
+.tabimage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.container.tabcon {
+  max-width: 1400px;
+}
+div.tabsconsumer {
+  min-height: auto;
+  display: grid;
+  text-align: center;
+}
+.tabimage-item {
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
+  text-align: center;
+  background: #f2e6f2;
+  padding: 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.tabimage-item img {
+  width: 100%;
+  height: 199px;
+  display: block;
+  border-radius: 13px;
+  box-shadow: 1px 1px 3px #0000008a;
+}
+
+.tabimage-item p {
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: justify;
+  border-radius: 10px;
+}
+.tabimage-item.taboffset {
+  margin-top: 20px;
+}
+.tabimage-item:nth-child(2) {
+  background: none;
+  border: 2px solid #933993;
+  box-shadow: 1px 1px 3px #0000003d;
+}
+.tabimage-item:nth-child(4) {
+  background: none;
+  border: 2px solid #933993;
+  box-shadow: 1px 1px 3px #0000003d;
 }
