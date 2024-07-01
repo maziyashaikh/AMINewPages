@@ -3992,7 +3992,7 @@ section.bgdesktop .offercenter {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .container.tabcon {
   max-width: 1400px;
@@ -4003,7 +4003,7 @@ div.tabsconsumer {
   text-align: center;
 }
 .tabimage-item {
-  flex: 1 1 calc(25% - 10px);
+  flex: 0 1 calc(25% - 10px);
   box-sizing: border-box;
   text-align: center;
   background: #f2e6f2;
@@ -4021,9 +4021,16 @@ div.tabsconsumer {
 
 .tabimage-item p {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify;
   border-radius: 10px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+}
+.tabimage-item a:hover {
+  text-decoration: none !important;
+  color: #933993;
+  font-weight: 600;
 }
 .tabimage-item.taboffset {
   margin-top: 20px;
@@ -4037,4 +4044,23 @@ div.tabsconsumer {
   background: none;
   border: 2px solid #933993;
   box-shadow: 1px 1px 3px #0000003d;
+}
+@media (max-width: 1000px) {
+  .tabimage-item {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  .tabimage-item.taboffset {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabimage-item {
+    flex: 0 1 calc(100% - 10px);
+  }
+
+  .tabimage-item.taboffset {
+    margin-top: 0;
+  }
 }
