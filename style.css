@@ -3608,6 +3608,13 @@ tab-content {
   box-shadow: 1px 1px 5px #0000007d;
   border-radius: 15px;
 }
+@media(max-width:992px){
+  .tabconimg img {
+  max-width: 100%;
+  box-shadow: 1px 1px 5px #0000007d;
+  border-radius: 15px;
+}
+}
 ul.tabcon li {
   text-align: justify;
   font-family: 'Calibri', sans-serif;
@@ -4027,6 +4034,12 @@ div.tabsconsumer {
   font-family: 'Calibri', sans-serif;
   font-weight: 500;
 }
+.consumersenti label {
+  margin: 1px;
+  width: fit-content;
+  font-size: 17px;
+}
+
 .tabimage-item a:hover {
   text-decoration: none !important;
   color: #933993;
